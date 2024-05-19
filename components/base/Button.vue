@@ -1,11 +1,9 @@
 <template>
-    <button class="rounded-lg bg-zinc-700 p-4 px-6 text-sm text-white shadow-md duration-200 hover:bg-zinc-800">
-        {{ buttonText }}
+    <button class="rounded-lg bg-zinc-700 py-4 px-6 text-sm shadow-md duration-200 hover:bg-zinc-800">
+        <span class="text-white">{{ buttonText }}</span>
     </button>
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const buttonText = ref("Click me");
 </script>
